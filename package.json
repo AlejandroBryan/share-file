@@ -1,0 +1,23 @@
+{
+  "name": "aws-api-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "app": "nodemon index.js",
+    "build": "npm run start_prod",
+    "dev": " npm run app ",
+    "start_dev": "pm2 start ecosystem.config.js --env development",
+    "start_prod": "pm2 start ecosystem.config.js --env production"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.421.0",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
